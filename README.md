@@ -28,7 +28,7 @@ Projeto desenvolvido durante a **Imersão IA: Agentes Autônomos Inteligentes** 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python 3.x** - Linguagem principal
+- **Python 3.9** - Linguagem principal
 - **OpenAI API** - Modelos de linguagem avançados
 - **Pandas** - Manipulação e análise de dados
 - **Requests** - Integração com APIs externas
