@@ -10,7 +10,6 @@
 **Sistema inteligente de service desk com triagem automática e RAG**
 
 [![GitHub](https://img.shields.io/badge/👁️_Ver_Código-181717?style=for-the-badge&logo=github&logoColor=white)](src/agente_ia.py)
-[![Certificado](https://img.shields.io/badge/📜_Certificado_Alura-FF6B00?style=for-the-badge)](https://cursos.alura.com.br/immersion/certificate/1c584cf8-80ac-46eb-81b6-7b8259235cb7)
 
 </div>
 
