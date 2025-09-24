@@ -66,34 +66,6 @@ Alura-IA-Agents/
 - Conta no Google AI Studio (Gemini API)
 - Git instalado
 
-### ⚡ Execução Rápida
-
-bash
-# Clone o repositório
-git clone https://github.com/carloseduardo-rocha/Alura-IA-Agents.git
-cd Alura-IA-Agents
-
-# Configure as variáveis de ambiente
-cp .env.example .env
-# Edite o .env com: GEMINI_API_KEY=sua_chave_aqui
-
-# Instale as dependências
-pip install google-generativeai python-dotenv pypdf2
-
-# Execute o agente
-python src/agente_ia.py
-
-
-🎯 Exemplos de Uso
-
-💼 Casos de Teste Recomendados:
-
-Pergunta Classificação Resposta
-"Posso reembolsar a internet?" 🎯 AUTO_RESOLVER Resposta detalhada
-"Preciso de uma aprovação especial" 🚨 ABRIR_CHAMADO Abre ticket urgente
-"Como funciona a política de home office?" 🎯 AUTO_RESOLVER Explicação contextual
-"Ajuda com RH" 🤔 PEDIR_INFO Solicita mais detalhes
-
 🔧 Personalização
 
 📝 Adicionando Documentos à Base:
