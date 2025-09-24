@@ -1,0 +1,21 @@
+# Variáveis de ambiente
+.env
+.env.local
+
+# Arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dados sensíveis
+data/perguntas_respostas.xlsx
+data/*.pdf
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
