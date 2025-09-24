@@ -47,69 +47,51 @@ Desenvolvido durante a **Imersão IA: Agentes Autônomos Inteligentes** da Alura
 
 ## 📦 Estrutura do Projeto
 
-
-
+```
 Alura-IA-Agents/
-├──src/
-│└── agente_ia.py          # 🧠 Agente principal com triagem inteligente
-├──data/                     # 📚 Documentos PDF (base de conhecimento)
-├──.env.example              # 🔧 Modelo de variáveis de ambiente
-├──.gitignore               # 🔒 Proteção de arquivos sensíveis
-└──README.md                # 📖 Documentação completa
+├── src/
+│   └── agente_ia.py
+├── data/
+├── .env.example
+├── .gitignore
+└── README.md
+```
 
+### 📋 Descrição dos Arquivos:
+- **`src/agente_ia.py`** - Agente principal com sistema de triagem inteligente
+- **`data/`** - Pasta para documentos PDF (base de conhecimento)
+- **`.env.example`** - Modelo para variáveis de ambiente
+- **`.gitignore`** - Proteção de arquivos sensíveis
+- **`README.md`** - Esta documentação
 
-
-## 🚀 Como Executar
-
-### Pré-requisitos
+### 🚀 Pré-requisitos
 - Python 3.9+
 - Conta no Google AI Studio (Gemini API)
 - Git instalado
 
-🔧 Personalização
-
-📝 Adicionando Documentos à Base:
-
-· Coloque arquivos PDF na pasta data/
-· O agente automaticamente indexa e usa no RAG
-· Suporta múltiplos documentos para conhecimento expandido
-
-🎨 Customizando Respostas:
-
-Edite o prompt no método perguntar_politica_RAG para:
-
-· Alterar o tom da comunicação
-· Adicionar emojis específicos
-· Customizar o estilo das respostas
-
-📚 Aprendizados Implementados
-
-· Arquitetura de Agentes Autônomos: Sistema que toma decisões independentes
-· RAG na Prática: Implementação real de Retrieval-Augmented Generation
-· Integração com APIs Modernas: Conexão com Google Gemini API
-· Processamento de Linguagem Natural: Análise e classificação de texto
-· Gestão de Segurança: Proteção de chaves API e dados sensíveis
-
-🎓 Casos de Uso Empresariais
-
-· Service Desk Automatizado: Triagem e atendimento inicial
-· FAQ Inteligente: Respostas contextuais para dúvidas frequentes
-· Onboarding de Colaboradores: Suporte a políticas internas
-· Suporte Técnico: Resolução automatizada de problemas comuns
-
-👨‍💻 Autor
-
-Carlos Eduardo Rocha
-https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
-
----
+## 👨‍💻 Autor
 
 <div align="center">
 
+![Carlos Eduardo Rocha](https://avatars.githubusercontent.com/carloseduardo-rocha?s=100)
+
+**Carlos Eduardo Rocha**  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/carloseduardo-rocha)
+
+</div>
+<div align="center">
+  
+---
 Desenvolvido com 💻 durante a Imersão IA da Alura
 
-https://img.shields.io/badge/Alura-FF6B00?style=for-the-badge&logo=alura&logoColor=white
+<div align="center">
+
+**Certificado da Imersão IA**  
+[![Alura](https://img.shields.io/badge/📜_Certificado_Alura-FF6B00?style=for-the-badge&logo=alura&logoColor=white)](https://cursos.alura.com.br/immersion/certificate/1c584cf8-80ac-46eb-81b6-7b8259235cb7)
+
+</div>
 
 "Transformando código em soluções inteligentes" 🚀
 
