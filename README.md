@@ -1,114 +1,144 @@
-# 🧠 Agente de IA - Imersão Alura
+# 🤖 Agente de IA Inteligente - Imersão Alura
 
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Advanced-FF6B00?style=for-the-badge)
+![AI Agent](https://img.shields.io/badge/AI%20Agent-Autonomous-00C853?style=for-the-badge)
 
-**Agente inteligente autônomo desenvolvido durante a Imersão IA da Alura**
+**Sistema inteligente de service desk com triagem automática e RAG**
 
-[![GitHub](https://img.shields.io/badge/👁️_Ver_Código-181717?style=for-the-badge&logo=github&logoColor=white)](agente_ia.py)
-[![Certificado](https://img.shields.io/badge/📜_Certificado-FF6B00?style=for-the-badge&logo=alura&logoColor=white)](https://cursos.alura.com.br/immersion/certificate/1c584cf8-80ac-46eb-81b6-7b8259235cb7)
+[![GitHub](https://img.shields.io/badge/👁️_Ver_Código-181717?style=for-the-badge&logo=github&logoColor=white)](src/agente_ia.py)
+[![Certificado](https://img.shields.io/badge/📜_Certificado_Alura-FF6B00?style=for-the-badge)](https://cursos.alura.com.br/immersion/certificate/1c584cf8-80ac-46eb-81b6-7b8259235cb7)
 
 </div>
 
-## 📋 Sobre o Projeto
+## 🎯 Sobre o Projeto
 
-Projeto desenvolvido durante a **Imersão IA: Agentes Autônomos Inteligentes** da Alura, onde criei um agente de IA capaz de processar consultas complexas utilizando técnicas avançadas de RAG (Retrieval-Augmented Generation) e integração com ferramentas externas.
+Desenvolvido durante a **Imersão IA: Agentes Autônomos Inteligentes** da Alura, este agente representa um sistema avançado de service desk que utiliza **triagem inteligente** e **RAG (Retrieval-Augmented Generation)** para atendimento automatizado com respostas contextuais e humanizadas.
 
-## 🚀 Funcionalidades
+## ⚡ Funcionalidades Principais
 
-- **🤖 Agente Autônomo**: Sistema que toma decisões e executa tarefas de forma independente
-- **🔍 RAG Avançado**: Combina busca de informação com geração contextualizada de respostas
-- **📊 Análise de Dados**: Processa e extrai insights de datasets complexos
-- **🌐 Integração API**: Conecta com serviços externos para expandir capacidades
-- **💬 Assistente Inteligente**: Mantém conversas contextuais e naturais
+- **🤖 Triagem Automática Inteligente**: Classifica solicitações em 3 categorias automaticamente
+- **🔍 Sistema RAG Avançado**: Busca em documentos PDF + geração contextualizada
+- **💬 Respostas Humanizadas**: Comunicação natural com personalidade e emojis
+- **🚨 Priorização por Urgência**: Define níveis de prioridade automaticamente
+- **📚 Aprendizado Contínuo**: Melhora respostas com base no histórico
+
+### 🎪 Fluxo de Decisão do Agente:
+
+
+1. 📝 Usuário faz uma pergunta
+2. 🎯 Agente classifica: AUTO_RESOLVER | PEDIR_INFO | ABRIR_CHAMADO
+3. 🔍 Busca em base de conhecimento (RAG)
+4. 💡 Gera resposta contextualizada e criativa
+5. 📊 Retorna resultado com citações dos documentos
+
+
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python 3.9** - Linguagem principal
-- **OpenAI API** - Modelos de linguagem avançados
-- **Pandas** - Manipulação e análise de dados
-- **Requests** - Integração com APIs externas
-- **Google Colab** - Ambiente de desenvolvimento
-- **Jupyter Notebook** - Prototipagem interativa
+- **Python 3.9+** - Linguagem principal
+- **Google Gemini API** - Modelos de linguagem avançados (gemini-1.5-flash)
+- **RAG (Retrieval-Augmented Generation)** - Busca aumentada por recuperação
+- **PyPDF2** - Processamento e análise de documentos PDF
+- **Sistema de Triagem Automática** - Classificação inteligente baseada em contexto
 
 ## 📦 Estrutura do Projeto
 
-```
-Alura-IA-Agents/
-├── agente_ia.py          # Código principal do agente
-├── README.md             # Documentação do projeto
-├── requirements.txt      # Dependências do projeto
-└── .env.example         # Exemplo de variáveis de ambiente
-```
 
-## ⚡ Como Executar
+
+Alura-IA-Agents/
+├──src/
+│└── agente_ia.py          # 🧠 Agente principal com triagem inteligente
+├──data/                     # 📚 Documentos PDF (base de conhecimento)
+├──.env.example              # 🔧 Modelo de variáveis de ambiente
+├──.gitignore               # 🔒 Proteção de arquivos sensíveis
+└──README.md                # 📖 Documentação completa
+
+
+
+## 🚀 Como Executar
 
 ### Pré-requisitos
-- Python 3.8+
-- Conta na OpenAI API
+- Python 3.9+
+- Conta no Google AI Studio (Gemini API)
 - Git instalado
 
-### 🏃‍♂️ Execução Rápida
+### ⚡ Execução Rápida
 
-1. **Clone o repositório**
-```bash
+bash
+# Clone o repositório
 git clone https://github.com/carloseduardo-rocha/Alura-IA-Agents.git
 cd Alura-IA-Agents
-```
 
-2. **Configure as variáveis de ambiente**
-```bash
+# Configure as variáveis de ambiente
 cp .env.example .env
-# Edite o arquivo .env com sua OPENAI_API_KEY
-```
+# Edite o .env com: GEMINI_API_KEY=sua_chave_aqui
 
-3. **Instale as dependências**
-```bash
-pip install -r requirements.txt
-```
+# Instale as dependências
+pip install google-generativeai python-dotenv pypdf2
 
-4. **Execute o agente**
-```bash
-python agente_ia.py
-```
+# Execute o agente
+python src/agente_ia.py
 
-## 🎯 Exemplos de Uso
 
-O agente pode ser utilizado para:
-- Consultas inteligentes em bases de conhecimento
-- Análise automatizada de datasets
-- Integração com sistemas externos
-- Processamento de linguagem natural avançado
+🎯 Exemplos de Uso
 
-## 📚 Aprendizados da Imersão
+💼 Casos de Teste Recomendados:
 
-- Arquitetura de agentes autônomos inteligentes
-- Implementação de RAG (Retrieval-Augmented Generation)
-- Integração de IA com ferramentas externas
-- Técnicas de processamento de linguagem natural
-- Boas práticas em desenvolvimento de IA
+Pergunta Classificação Resposta
+"Posso reembolsar a internet?" 🎯 AUTO_RESOLVER Resposta detalhada
+"Preciso de uma aprovação especial" 🚨 ABRIR_CHAMADO Abre ticket urgente
+"Como funciona a política de home office?" 🎯 AUTO_RESOLVER Explicação contextual
+"Ajuda com RH" 🤔 PEDIR_INFO Solicita mais detalhes
 
-## 👨‍💻 Autor
+🔧 Personalização
 
-**Carlos Eduardo Rocha**
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-linkedin)
-- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/carloseduardo-rocha)
+📝 Adicionando Documentos à Base:
 
-<div align="center">
+· Coloque arquivos PDF na pasta data/
+· O agente automaticamente indexa e usa no RAG
+· Suporta múltiplos documentos para conhecimento expandido
 
-**Desenvolvido com 💻 durante a Imersão IA da Alura**
+🎨 Customizando Respostas:
 
-[![Alura](https://img.shields.io/badge/Alura-FF6B00?style=for-the-badge&logo=alura&logoColor=white)](https://www.alura.com.br)
+Edite o prompt no método perguntar_politica_RAG para:
 
-</div>
+· Alterar o tom da comunicação
+· Adicionar emojis específicos
+· Customizar o estilo das respostas
+
+📚 Aprendizados Implementados
+
+· Arquitetura de Agentes Autônomos: Sistema que toma decisões independentes
+· RAG na Prática: Implementação real de Retrieval-Augmented Generation
+· Integração com APIs Modernas: Conexão com Google Gemini API
+· Processamento de Linguagem Natural: Análise e classificação de texto
+· Gestão de Segurança: Proteção de chaves API e dados sensíveis
+
+🎓 Casos de Uso Empresariais
+
+· Service Desk Automatizado: Triagem e atendimento inicial
+· FAQ Inteligente: Respostas contextuais para dúvidas frequentes
+· Onboarding de Colaboradores: Suporte a políticas internas
+· Suporte Técnico: Resolução automatizada de problemas comuns
+
+👨‍💻 Autor
+
+Carlos Eduardo Rocha
+https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
 
 ---
 
+<div align="center">
 
-**Precisa que eu ajuste mais alguma coisa no README, mano?** 
+Desenvolvido com 💻 durante a Imersão IA da Alura
 
-**Agora partiu refatorar o código! 💪**
+https://img.shields.io/badge/Alura-FF6B00?style=for-the-badge&logo=alura&logoColor=white
+
+"Transformando código em soluções inteligentes" 🚀
+
+</div>
